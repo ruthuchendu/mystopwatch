@@ -2,6 +2,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+body {
+    background-color: rgb(4, 4, 53);
+}
 
 main {
     display: flex;
@@ -13,7 +16,7 @@ main {
 margin-top: 50px;
 width: 40%;
 height: 40vh;
-background-color: #D72C2C;
+background-color: #b6b3b3;
 text-align: center;
 }
 
@@ -61,4 +64,41 @@ button {
 }
 .button-container .decrease {
     color: #FD2315;
+}
+/* MEDIA QUERY */
+@media screen and (max-width: 600px) {
+ .container .header {
+     font-size: 20px;
+     font-weight: 600;
+     text-transform: uppercase;
+     text-align: center;
+     
+ }
+
+ .container .zero {
+     font-size: 35px;
+     font-weight: 900;
+     text-align: center;
+     margin-top: auto;
+ }
+
+ button .button-container {
+     display: block;
+     float: none;
+     justify-content: space-evenly;
+     align-items: center;
+     text-align: center;
+}
+button {
+    width: 30%;
+    text-transform: uppercase;
+    padding: 3px;
+    margin-bottom: 30px;
+    text-align: center;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 15px;
+    display: block;
+}
 }

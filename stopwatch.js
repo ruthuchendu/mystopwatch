@@ -15,7 +15,7 @@ function trigger(e) {
       count++;
     }
   } else if (styles.contains("decrease")) {
-    if (count > 1) {
+    if (count > 0) {
       count--;
     }
   } else {
@@ -26,8 +26,8 @@ function trigger(e) {
   header.style.color = "#2C9C05";
   }
   if (count < 0) {
-    zero.style.color = "#fff";
-    header.style.color = "#fff";
+    zero.style.color = "#FD2315";
+    header.style.color = "#FD2315";
   }
   if (count === 0) {
     zero.style.color = "#0E1FB2";
